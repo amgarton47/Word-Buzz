@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Buzz</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="/libraries/favicon.ico" />
+  </head>
+  <body>
+    <input
+      type="text"
+      id="userInput"
+      onkeypress="return event.charCode != 32"
+    />
+
+    <!-- <div id="alertWindow">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">
+        x
+      </span>
+    </div> -->
+
+    <div id="alertWindow"></div>
+
+    <h4 id="wordAmmount">
+      You have 0 words. Your score is 0.
+    </h4>
+    <ul id="userWords"></ul>
+  </body>
+  <script src="../libraries/p5.js"></script>
+  <script src="../dictionary/4-letter-words.js"></script>
+  <script src="../dictionary/5-letter-words.js"></script>
+  <script src="../dictionary/6-letter-words.js"></script>
+  <script src="../dictionary/7-letter-words.js"></script>
+  <script src="../SpellingBee/helperFuncs.js"></script>
+  <script src="../SpellingBee/Tile.js"></script>
+  <script src="../SpellingBee/sketch.js"></script>
+</html>
